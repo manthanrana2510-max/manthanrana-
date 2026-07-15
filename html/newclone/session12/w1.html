@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Artist Landing Page</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #1e1e2f, #3a3a5f);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .bio {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #f0f0f0;
+            margin-bottom: 25px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-buttons a {
+            text-decoration: none;
+            color: white;
+            background: #ff4d6d;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .social-buttons a:hover {
+            background: #ff1f4b;
+            transform: translateY(-3px);
+        }
+
+        .social-buttons i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://via.placeholder.com/180" alt="Artist Profile" class="profile-img">
+
+    <h1>Alex Harmony</h1>
+
+    <p class="bio">
+        Alex Harmony is a passionate singer-songwriter known for soulful melodies
+        and energetic live performances. Explore the latest music, albums, and
+        connect on social media.
+    </p>
+
+    <div class="social-buttons">
+        <a href="#"><i class="bi bi-instagram"></i>Instagram</a>
+        <a href="#"><i class="bi bi-youtube"></i>YouTube</a>
+        <a href="#"><i class="bi bi-spotify"></i>Spotify</a>
+    </div>
+</div>
+
+</body>
+</html>

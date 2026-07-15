@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Movie Poster Grid</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Movie Grid */
+        .movie-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Movie Poster */
+        .movie {
+            position: relative; /* Parent for absolute badge */
+            width: 180px;
+        }
+
+        .movie img {
+            width: 100%;
+            height: 270px;
+            border-radius: 8px;
+            display: block;
+        }
+
+        /* New Badge */
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .movie-title {
+            text-align: center;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>BookMyShow Movie Poster Grid</h2>
+
+    <div class="movie-grid">
+
+        <!-- Movie with New Badge -->
+        <div class="movie">
+            <span class="badge">New</span>
+            <img src="images/images/thegayman.jpg" alt="Movie 1">
+            <div class="movie-title">Movie One</div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="movie">
+            <img src="images/images/anvengers.jpg" alt="Movie 2">
+            <div class="movie-title">Movie Two</div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="movie">
+            <img src="images/images/leave.jpg" alt="Movie 3">
+            <div class="movie-title">Movie Three</div>
+        </div>
+         <div class="movie">
+            <img src="images/images/strange-think.jpg" alt="Movie 3">
+            <div class="movie-title">Movie fourth</div>
+        </div>
+
+         <div class="movie">
+            <img src="images/images/red-notic.jpg" alt="Movie 3">
+            <div class="movie-title">Movie fifth</div>
+        </div>
+ <div class="movie">
+            <img src="images/images/extra.jpg" alt="Movie 3">
+            <div class="movie-title">Movie sixth</div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Review Form</title>
+</head>
+<body>
+
+    <h2>Flipkart Product Review</h2>
+
+    <form action="#" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <select id="rating" name="rating" required>
+            <option value="" selected disabled>Select Rating</option>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select><br><br>
+
+        <label for="review">Review:</label><br>
+        <textarea id="review" name="review" rows="5" cols="30" minlength="20" required></textarea><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Product Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2874f0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .product-grid {
+  
+    </style>
+</head>
+<body>
+
+    <h1>Flipkart Product Grid</h1>
+
+    <section class="product-grid">
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Laptop">
+            <h3>Laptop</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Smartphone">
+            <h3>Smartphone</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Headphones">
+            <h3>Headphones</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Camera">
+            <h3>Camera</h3>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Bluetooth Speaker">
+            <h3>Bluetooth Speaker</h3>
+        </div>
+
+    </section>
+
+</body>
+</html>

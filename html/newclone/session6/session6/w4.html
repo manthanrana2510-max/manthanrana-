@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Movie Poster Grid</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #d32f2f;
+        }
+
+        .poster-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .poster {
+            position: relative; /* Parent is relative */
+            width: 180px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .poster img {
+            width: 100%;
+            height: 260px;
+            display: block;
+        }
+
+        .movie-title {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .badge {
+            position: absolute; /* Positioned relative to .poster */
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>BookMyShow Movie Posters</h2>
+
+<div class="poster-grid">
+
+    <!-- Poster with NEW badge -->
+    <div class="poster">
+        <span class="badge">NEW</span>
+        <img src="images/images/red-notic.jpg" alt="Movie 1">
+        <div class="movie-title">Movie One</div>
+    </div>
+
+    <!-- Poster 2 -->
+    <div class="poster">
+        <img src="images/images/extra.jpg" alt="Movie 2">
+        <div class="movie-title">Movie Two</div>
+    </div>
+
+    <!-- Poster 3 -->
+    <div class="poster">
+        <img src="images/images/strange-think.jpg" alt="Movie 3">
+        <div class="movie-title">Movie Three</div>
+    </div>
+
+</div>
+
+</body>
+</html>
